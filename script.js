@@ -11,7 +11,7 @@ async function checkLicense(key) {
     return (await res.text()).trim() === 'active';
   } catch { return false; }
 }
-
+   
 function showLicensePopup() {
   if (document.getElementById('_license_popup')) return;
   const overlay = document.createElement('div');
